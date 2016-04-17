@@ -1,0 +1,35 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity" >
+
+    <RelativeLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="34dp" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:text="城市天气预报"
+            android:textColor="@android:color/holo_blue_dark" />
+    </RelativeLayout>
+
+    <com.weather.entity.BiaoPanview
+        android:id="@+id/weather_biaopan"
+        android:layout_width="wrap_content"
+        android:layout_height="300dp"
+        android:background="@drawable/bg_biaopan_x" >
+    </com.weather.entity.BiaoPanview>
+    <com.github.mikephil.charting.charts.LineChart
+       android:layout_height="300dp"
+       android:layout_width="match_parent"
+       android:id="@+id/weather_linechart"
+       android:layout_gravity="center_horizontal"
+        ></com.github.mikephil.charting.charts.LineChart>
+
+</LinearLayout>
